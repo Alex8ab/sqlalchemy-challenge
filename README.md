@@ -14,4 +14,4 @@ Climate analysis on Honolulu, Hawaii to planning a vacation trip from 2017-04-11
   - Sort the DataFrame values by date.
   - Plot the results using the DataFrame plot method.
 
-![Precipitation](Images/Precipitation.png)
+![Precipitation](Images/precipitation.png)
