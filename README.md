@@ -31,20 +31,15 @@ Climate analysis on Honolulu, Hawaii to planning a vacation trip from 2017-04-11
 ## Step 2 - Climate App
 Design a Flask API based on the queries below.
 
-   - `/` Homepage route:
-   	- Listing all available routes
+   - `/` Homepage route: listing all available routes
 
-   - `/api/v1.0/precipitation` route:
-	- Returning a JSON representation of a dictionary of dates and precipitations for all stations.
+   - `/api/v1.0/precipitation` route: returning a JSON representation of a dictionary of dates and precipitations for all stations.
  
-   - `/api/v1.0/stations` route:
-	- Returning a JSON list of stations
+   - `/api/v1.0/stations` route: returning a JSON list of stations
 
    - `/api/v1.0/tobs` route:
 	- Returning a JSON list of temperature observations of the most active station for the last year of data.
 
-   - `/api/v1.0/<start>` route:
-	- Returning a JSON list of the minimum temperature, the average temperature, and the max temperature for a given start. User can select the start date.
+   - `/api/v1.0/<start>` route: returning a JSON list of the minimum temperature, the average temperature, and the max temperature for a given start. User can select the start date.
 
-- `/api/v1.0/<start>/<end>` route:
-	- Returning a JSON list of the minimum temperature, the average temperature, and the max temperature for a given start. User can select the start and end date.
+   - `/api/v1.0/<start>/<end>` route: returning a JSON list of the minimum temperature, the average temperature, and the max temperature for a given start. User can select the start and end date.
