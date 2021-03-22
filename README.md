@@ -31,21 +31,20 @@ Climate analysis on Honolulu, Hawaii to planning a vacation trip from 2017-04-11
 ## Step 2 - Climate App
 Design a Flask API based on the queries below.
 
-  - Homepage route:
-	  - Listing all available routes
+   - `/` Homepage route:
+   	- Listing all available routes
 
-  - /api/v1.0/precipitation route:
-	  - Returning a JSON representation of a dictionary of dates and precipitation values for all stations from precipitation data for the dates between 08/23/2016 to 08/23/2017
+   - `/api/v1.0/precipitation` route:
+	- Returning a JSON representation of a dictionary of dates and precipitations for all stations.
+ 
+   - `/api/v1.0/stations` route:
+	- Returning a JSON list of stations
 
-- `/api/v1.0/stations` route:
-	- Returning a JSON list of stations with station and station name from the dataset
+   - `/api/v1.0/tobs` route:
+	- Returning a JSON list of temperature observations of the most active station for the last year of data.
 
-- `/api/v1.0/tobs` route:
-	- Returning a JSON list of temperature observations(TOBS) for the previous year of the most active station last year
-	(Date range: 08/23/2016 to 08/23/2017 for active station USC00519281 located in Waihee, HI)
-	
-- `/api/v1.0/<start>` route:
-	- User is able to specify a date and is returned a JSON list of the minimum temperature, the average temperature, and the max temperature for all dates greater than and equal to the start date from active station USC00519281
+   - `/api/v1.0/<start>` route:
+	- Returning a JSON list of the minimum temperature, the average temperature, and the max temperature for a given start. User can select the start date.
 
 - `/api/v1.0/<start>/<end>` route:
-	- User is able to specify a start and end date and is returned a JSON list of the minimum temperature, the average temperature, and the max temperature for that specific date range from active station USC00519281
+	- Returning a JSON list of the minimum temperature, the average temperature, and the max temperature for a given start. User can select the start and end date.
